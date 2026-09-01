@@ -18,7 +18,8 @@ button, input, textarea { font: inherit; }
 .shell { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
 .anchor-target { position: absolute; transform: translateY(-92px); }
 
-.site-header { position: relative; z-index: 20; background: rgba(251,247,241,.96); border-bottom: 1px solid rgba(179,74,40,.12); }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(251,247,241,.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(179,74,40,.12); }
+section[id] { scroll-margin-top: 96px; }
 .header-inner { width: min(1260px, calc(100% - 48px)); min-height: 92px; display: flex; align-items: center; gap: 24px; }
 .logo { flex: 0 0 auto; display: inline-flex; flex-direction: column; align-items: center; line-height: 1; letter-spacing: .25em; }
 .logo span { font-size: 28px; letter-spacing: .27em; margin-right: -.27em; }
