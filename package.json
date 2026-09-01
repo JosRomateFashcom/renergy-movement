@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "build": "rm -rf ./dist && mkdir -p ./dist/images && cp ./index.html ./style.css ./script.js ./dist/ && cp ./images/* ./dist/images/"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.14"
   }
 }
