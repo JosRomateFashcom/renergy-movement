@@ -115,6 +115,10 @@ button, input, textarea { font: inherit; }
 .contact-form textarea { height: 60px; resize: vertical; }
 .form-wide { grid-column: 1 / -1; }
 .contact-form .button { width: max-content; border: 0; }
+.form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { margin: 0; font-size: 13px; min-height: 18px; }
+.form-status.is-success { color: #2e6b3f; }
+.form-status.is-error { color: var(--rust-dark); }
 .appointment-card { margin: 16px 0; padding: 17px 16px; text-align: center; border: 1px solid var(--line); background: rgba(255,253,249,.75); }
 .appointment-card .service-icon { margin: 0 auto; }
 .appointment-card h3 { margin: 9px 0 5px; font-size: 15px; }
